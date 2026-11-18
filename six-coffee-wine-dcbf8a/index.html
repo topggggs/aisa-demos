@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- Демо-концепт мини-приложения. Не официальный сайт бизнеса. Подготовлено: AI-студия. -->
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="robots" content="noindex, nofollow, noarchive" />
+<meta name="theme-color" content="#e8613c" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="Six Coffee+W" />
+<title>Six Coffee+Wine — демо-приложение</title>
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="icon-192.png" />
+<link rel="stylesheet" href="assets/app.css" />
+<style>:root{--accent:#e8613c;--accent2:#f4a259;--ink:#24160f}</style>
+</head>
+<body>
+<div class="demo-bar">Демо-концепт для «Six Coffee+Wine» от AI-студия · не официальный сайт</div>
+<div class="app">
+  <header class="top">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">☕</div>
+      <div class="brand-text">
+        <div class="name">Six Coffee+Wine</div>
+        <div class="sub"><span id="open-status"></span>Алматы</div>
+      </div>
+    </div>
+    <button class="icon-btn" id="install-btn" type="button" hidden>На экран</button>
+  </header>
+
+  <main>
+    <section class="hero has-photo" id="home">
+      <img src="images/01.jpg" class="hero-img" alt="" />
+      <div class="hero-body">
+        <h1>Six Coffee+Wine – кофе и винные нотки в Алматы</h1>
+        <p>Утренний ароматный эспрессо и вечерний бокал вина – идеальное сочетание для работы, встреч и отдыха.</p>
+        <button class="btn primary big" type="button" data-book>Забронировать</button>
+      </div>
+    </section>
+
+    <div id="my-booking"></div>
+
+    <nav class="quick" aria-label="Связаться">
+      
+      
+      <a class="quick-item" href="https://2gis.kz/search/Six%20Coffee%2BWine%20%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B%20%D0%91%D3%A9%D0%B3%D0%B5%D0%BD%D0%B1%D0%B0%D0%B9%20%D0%B1%D0%B0%D1%82%D1%8B%D1%80%20%D0%BA%D3%A9%D1%88%D0%B5%D1%81%D1%96%2C%20117" rel="noopener"><span class="qi">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+      </span>Маршрут</a>
+      <button class="quick-item" type="button" data-chat><span class="qi">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2zm3 6v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z"/></svg>
+      </span>Помощник</button>
+    </nav>
+
+    <section class="card" id="services">
+      <div class="section-head"><h2>Услуги и цены</h2><span class="chip">пример цен</span></div>
+      <ul class="services">
+        
+        <li class="service">
+          <div class="s-info">
+            <div class="s-name">Стол на 2 гостей</div>
+            <div class="s-meta">1 ч 30 мин</div>
+          </div>
+          <div class="s-right">
+            
+            <button class="btn small" type="button" data-book="0">Выбрать</button>
+          </div>
+        </li>
+        
+        <li class="service">
+          <div class="s-info">
+            <div class="s-name">Стол на 4–6 гостей</div>
+            <div class="s-meta">2 ч</div>
+          </div>
+          <div class="s-right">
+            
+            <button class="btn small" type="button" data-book="1">Выбрать</button>
+          </div>
+        </li>
+        
+        <li class="service">
+          <div class="s-info">
+            <div class="s-name">Кофе с собой — заказ заранее</div>
+            
+          </div>
+          <div class="s-right">
+            <div class="s-price">от 1 200 ₸</div>
+            <button class="btn small" type="button" data-book="2">Выбрать</button>
+          </div>
+        </li>
+        
+        <li class="service">
+          <div class="s-info">
+            <div class="s-name">Бизнес-ланч</div>
+            <div class="s-meta">1 ч</div>
+          </div>
+          <div class="s-right">
+            <div class="s-price">от 3 000 ₸</div>
+            <button class="btn small" type="button" data-book="3">Выбрать</button>
+          </div>
+        </li>
+        
+      </ul>
+      <p class="note">Цены и список услуг — пример для демо: в рабочей версии владелец указывает свои и меняет их сам.</p>
+    </section>
+
+    <section class="card" id="why">
+      <h2>Почему выбирают нас</h2>
+      <div class="features">
+        
+        <div class="feature">
+          <div class="f-num">1</div>
+          <div><div class="f-title">Кофейные классики</div><p>От эспрессо до фильтр-кофе – тщательно отобранные сорта, приготовленные с вниманием к деталям.</p></div>
+        </div>
+        
+        <div class="feature">
+          <div class="f-num">2</div>
+          <div><div class="f-title">Винная карта</div><p>Подобранные вина из разных регионов, которые отлично сочетаются с нашими лёгкими закусками.</p></div>
+        </div>
+        
+        <div class="feature">
+          <div class="f-num">3</div>
+          <div><div class="f-title">Зона для работы и встреч</div><p>Уютные столики с розетками и спокойным освещением позволяют работать, читать или вести деловые переговоры.</p></div>
+        </div>
+        
+        <div class="feature">
+          <div class="f-num">4</div>
+          <div><div class="f-title">Вечерняя атмосфера</div><p>Приглушённый свет и мягкая музыка создают настроение для неспешных разговоров и дегустаций.</p></div>
+        </div>
+        
+      </div>
+    </section>
+
+    
+    <section class="card">
+      <h2>Фото</h2>
+      <div class="gallery"><img src="images/02.jpg" alt="" loading="lazy" /><img src="images/03.jpg" alt="" loading="lazy" /><img src="images/04.jpg" alt="" loading="lazy" /><img src="images/05.jpg" alt="" loading="lazy" /></div>
+      <p class="note">Фото — для примера, в рабочей версии здесь ваши работы.</p>
+    </section>
+    
+
+    <section class="card" id="about">
+      <h2>О нас</h2>
+      <p>В Six Coffee+Wine мы соединяем аромат свежесваренного кофе с изысканным выбором вин, создавая пространство, где каждый гость может расслабиться или продолжить продуктивный день. Меню построено так, чтобы предложить лёгкие закуски, подходящие как к чашке кофе, так и к бокалу вина. Мы ценим комфорт и спокойную атмосферу, позволяя посетителям наслаждаться моментом в Алматы.</p>
+    </section>
+
+    <section class="card" id="contacts">
+      <h2>Контакты</h2>
+      
+      <dl class="facts">
+        <div class="fact"><dt>Адрес</dt><dd>Бөгенбай батыр көшесі, 117</dd></div><div class="fact"><dt>Сайт</dt><dd>https://six-coffee.taplink.ws/</dd></div>
+      </dl>
+      
+      <div class="row">
+        
+        <a class="btn" href="https://instagram.com/sixcoffeewine" rel="noopener">Instagram</a>
+        <a class="btn" href="https://2gis.kz/search/Six%20Coffee%2BWine%20%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B%20%D0%91%D3%A9%D0%B3%D0%B5%D0%BD%D0%B1%D0%B0%D0%B9%20%D0%B1%D0%B0%D1%82%D1%8B%D1%80%20%D0%BA%D3%A9%D1%88%D0%B5%D1%81%D1%96%2C%20117" rel="noopener">2ГИС</a>
+      </div>
+    </section>
+
+    <section class="card cta">
+      <h2>Приглашаем вас в Six Coffee+Wine</h2>
+      <p>Зайдите к нам в любой день, чтобы насладиться ароматным кофе, хорошим вином и приятной атмосферой. Хотите зайти сегодня?</p>
+      <button class="btn primary big" type="button" data-book>Забронировать</button>
+    </section>
+
+    <footer class="foot">
+      Демо-версия приложения «Six Coffee+Wine». Подготовлено: AI-студия.
+      Контакты и часы работы — из открытых источников (OpenStreetMap), могут быть неточными.
+      Фото — для примера (CC0). Запись в демо никуда не отправляется.
+    </footer>
+  </main>
+
+  <nav class="tabbar" aria-label="Разделы">
+    <a class="tab" href="#home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 11h3v9h5v-6h4v6h5v-9h3z"/></svg>Главная</a>
+    <a class="tab" href="#services"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg>Услуги</a>
+    <button class="tab main" type="button" data-book><span>+</span>Забронировать</button>
+    <button class="tab" type="button" data-chat><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2z"/></svg>Помощник</button>
+    <a class="tab" href="#contacts"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Контакты</a>
+  </nav>
+</div>
+
+<div class="sheet-backdrop" id="backdrop" hidden></div>
+<section class="sheet" id="booking" role="dialog" aria-modal="true" aria-label="Забронировать" hidden></section>
+<section class="sheet" id="chat" role="dialog" aria-modal="true" aria-label="Помощник" hidden></section>
+<div class="toast" id="toast" hidden></div>
+
+<script type="application/json" id="app-data">{"action": "\u0417\u0430\u0431\u0440\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u0442\u044c", "address": "\u0411\u04e9\u0433\u0435\u043d\u0431\u0430\u0439 \u0431\u0430\u0442\u044b\u0440 \u043a\u04e9\u0448\u0435\u0441\u0456, 117", "city": "\u0410\u043b\u043c\u0430\u0442\u044b", "defaultHours": [600, 1200], "example": "\u0421\u0442\u043e\u043b \u043d\u0430 \u0434\u0432\u043e\u0438\u0445 \u0432 \u0441\u0443\u0431\u0431\u043e\u0442\u0443 \u0432 19:00", "hours": null, "hoursKnown": false, "hoursText": "", "links": {"instagram": "https://instagram.com/sixcoffeewine", "map": "https://2gis.kz/search/Six%20Coffee%2BWine%20%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B%20%D0%91%D3%A9%D0%B3%D0%B5%D0%BD%D0%B1%D0%B0%D0%B9%20%D0%B1%D0%B0%D1%82%D1%8B%D1%80%20%D0%BA%D3%A9%D1%88%D0%B5%D1%81%D1%96%2C%20117", "phone": "", "whatsapp": ""}, "name": "Six Coffee+Wine", "services": [{"minutes": 90, "name": "\u0421\u0442\u043e\u043b \u043d\u0430 2 \u0433\u043e\u0441\u0442\u0435\u0439", "price_from_kzt": 0}, {"minutes": 120, "name": "\u0421\u0442\u043e\u043b \u043d\u0430 4\u20136 \u0433\u043e\u0441\u0442\u0435\u0439", "price_from_kzt": 0}, {"minutes": 0, "name": "\u041a\u043e\u0444\u0435 \u0441 \u0441\u043e\u0431\u043e\u0439 \u2014 \u0437\u0430\u043a\u0430\u0437 \u0437\u0430\u0440\u0430\u043d\u0435\u0435", "price_from_kzt": 1200}, {"minutes": 60, "name": "\u0411\u0438\u0437\u043d\u0435\u0441-\u043b\u0430\u043d\u0447", "price_from_kzt": 3000}]}</script>
+<script src="assets/app.js"></script>
+</body>
+</html>
